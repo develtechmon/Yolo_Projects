@@ -105,6 +105,22 @@ names:
 - vehicle
 - wheel loader
 ```
+
+Makesure you have Folder Structure as follow:
+```
+D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety
+
+├── data.yaml
+├── train
+│   ├── images
+│   └── labels
+├── valid
+│   ├── images
+│   └── labels
+└── test
+    ├── images
+    └── labels
+```
 ## If done, run below command to run our custome training
 ```
 !yolo task=detect mode=train model=yolov8l.pt data=../content/drive/MyDrive/Construction_Safety/data.yaml epochs=50 imgsz=640
