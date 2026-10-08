@@ -41,6 +41,11 @@ drive.mount('/content/drive')
 py -3.9 -m venv yolo
 .\yolo\Scripts\activate
 ```
+
+## Update tool and wheels
+```
+python -m pip install --upgrade pip setuptools wheel
+```
 ## Install yolo packages
 ```
 !pip install ultralytics
