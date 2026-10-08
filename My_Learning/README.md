@@ -36,6 +36,11 @@ drive.mount('/content/drive')
 !nvidia-smi
 ```
 
+# Setup Virtual Environment for clean setup
+```
+py -3.9 -m venv yolo
+.\yolo\Scripts\activate
+```
 ## Install yolo packages
 ```
 !pip install ultralytics
