@@ -153,7 +153,7 @@ yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt
 ```
 If you want to explicitly use GPU 0:
 ```
-yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640 device=0
+yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640 device=0 batch=-1
 ```
 If CPU only:
 ```
