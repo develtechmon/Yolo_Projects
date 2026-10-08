@@ -54,6 +54,8 @@ yolo task=detect mode=predict model="D:\MachineLearning\Yolo\yolo_model\yolov8s.
 ```
 
 ## Custom Data Training
+
+If using Gooogle Colab
 ```
 1. First edit data.yaml 
 2. Please ensure "path" variable is there and pointed to correct "Construction safety" as follow:
@@ -63,6 +65,46 @@ val: ../valid/images
 test: ../test/images
 ```
 
+If using Local Machine
+```
+1. First edit data.yaml 
+2. Please ensure "path" variable is there and pointed to correct "Construction safety" as follow:
+
+path: D:/MachineLearning/Yolo/Dataset/Construction_Site_Safety
+ 
+train: train/images
+val: valid/images
+test: test/images
+ 
+nc: 25
+ 
+names:
+- Excavator
+- Gloves
+- Hardhat
+- Ladder
+- Mask
+- NO-Hardhat
+- NO-Mask
+- NO-Safety Vest
+- Person
+- SUV
+- Safety Cone
+- Safety Vest
+- bus
+- dump truck
+- fire hydrant
+- machinery
+- mini-van
+- sedan
+- semi
+- trailer
+- truck and trailer
+- truck
+- van
+- vehicle
+- wheel loader
+```
 ## If done, run below command to run our custome training
 ```
 !yolo task=detect mode=train model=yolov8l.pt data=../content/drive/MyDrive/Construction_Safety/data.yaml epochs=50 imgsz=640
