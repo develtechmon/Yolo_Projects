@@ -13,7 +13,9 @@
 1. download model from roboflow
 ```
 https://universe.roboflow.com/roboflow-universe-projects/construction-site-safety
-
+```
+Please choose `Yolov8` download format.
+```
 3. download as zip. Extract this file and copy it later to google drive
 4. From google drive, create "construction_model" and extract downloaded files into this directory.
 5. mount google colab to access the drive using this command
