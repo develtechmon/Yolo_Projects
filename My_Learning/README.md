@@ -130,15 +130,15 @@ If using Google colab use this command
 
 If using Windows PC use this command
 ```
-yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640
+yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640
 ```
 If you want to explicitly use GPU 0:
 ```
-yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640 device=0
+yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640 device=0
 ```
 If CPU only:
 ```
-yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640 device=cpu
+yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640 device=cpu
 ```
 
 ## Output Files 
