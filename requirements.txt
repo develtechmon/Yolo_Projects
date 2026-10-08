@@ -17,3 +17,5 @@ filterpy==1.4.5
 scikit-image==0.19.3
 lap==0.5.13
 tensorboard
+
+pip install "setuptools<81"
