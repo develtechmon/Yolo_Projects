@@ -58,6 +58,11 @@ This command will automatically download large `yolo` into local machine and per
 !yolo task=detect mode=predict model=yolov8l.pt conf=0.25 source="https://ultralytics.com/images/bus.jpg"
 ```
 
+This command will automatically download small `yolo` into local machine and perform and inference to image online
+```
+!yolo task=detect mode=predict model=yolov8s.pt conf=0.25 source="https://ultralytics.com/images/bus.jpg"
+```
+
 Local Inference. This command will automatically execute small local `yolo` model and perform an inference to local image.
 ```
 yolo task=detect mode=predict model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt" conf=0.25 source="D:\MachineLearning\Yolo\bus.jpg"
