@@ -141,6 +141,29 @@ If CPU only:
 yolo task=detect mode=train model="D:\MachineLearning\Yolo\yolo_model\yolov8s.pt" data="D:\MachineLearning\Yolo\Dataset\Construction_Site_Safety\data.yaml" epochs=50 imgsz=640 device=cpu
 ```
 
+Open Tensorboard while training
+```
+tensorboard --logdir runs
+```
+
+Then open
+```
+http://localhost:6006
+```
+
+```
+You can monitor:
+
+Loss curves
+Accuracy
+Precision
+Recall
+mAP
+```
+
+The most important metric to watch is mAP50-95. If it keeps
+increasing while losses decrease, your model is learning properly. The final trained model will be saved as
+
 ## Output Files 
 ```
 go to "runs --> detect -> train -> weights -> best.pt"
