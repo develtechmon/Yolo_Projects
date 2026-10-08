@@ -40,6 +40,15 @@ If you need CUDA enabled, run this command to speed up the training:
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 ```
 
+Then verify if cuda enabled using this command:
+```
+python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available(), torch.cuda.get_device_name(0))"
+```
+Output as follow:
+```
+2.8.0+cu128 12.8 True NVIDIA GeForce RTX 4050 Laptop GPU
+```
+
 # Setup Virtual Environment for clean setup
 ```
 py -3.9 -m venv yolo
