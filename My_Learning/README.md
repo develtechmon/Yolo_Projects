@@ -35,6 +35,10 @@ drive.mount('/content/drive')
 ```
 !nvidia-smi
 ```
+If you need CUDA enabled, run this command to speed up the training:
+```
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+```
 
 # Setup Virtual Environment for clean setup
 ```
