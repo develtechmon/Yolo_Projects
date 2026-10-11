@@ -40,6 +40,12 @@ If you need CUDA enabled, run this command to speed up the training:
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 ```
 
+If you use old laptop for example RTx 970m, please install this cuda version
+```
+py -3.9 -m pip install --upgrade pip --timeout 300
+
+py -3.9 -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu126 --timeout 300 --retries 10
+```
 Then verify if cuda enabled using this command:
 ```
 python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available(), torch.cuda.get_device_name(0))"
