@@ -44,10 +44,9 @@ If you use old laptop for example RTx 970m, please install this cuda version
 ```
 py -3.9 -m pip install --upgrade pip --timeout 300
 
-## py -3.9 -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu126 --timeout 300 --retries 10
 py -3.9 -m pip install --force-reinstall --no-deps torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu126 --timeout 300 --retries 10
 
-py -3.11 -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
+py -3.9 -c "import torch; print(torch.__version__); print(torch.cuda.get_arch_list())"
 ```
 Then verify if cuda enabled using this command:
 ```
